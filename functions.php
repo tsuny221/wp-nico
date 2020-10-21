@@ -1,7 +1,7 @@
 <?php
 function my_scripts() {
   //css
-wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/style.css', array(), '1.0.1', 'all' );
+wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/style.css', array(), '1.0.2', 'all' );
 
 //javascript
 wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '1.0.0', true );

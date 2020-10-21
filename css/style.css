@@ -44,7 +44,8 @@ img {
 .pb-lg {
   padding-bottom: 80px !important;
 }
-.content-width {
+.content-width,
+.header {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -62,6 +63,27 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+header {
+  width: 100%;
+  position: fixed;
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__li {
+  list-style: none;
+  margin-right: 20px;
 }
 @media (min-width: 600px) {
   .flex {
