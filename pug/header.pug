@@ -9,48 +9,48 @@ html(lang="ja")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     <?php wp_head(); ?>
   body
-    header.header
-      .header__logo
-        a(href="")
-          img(src="/portfolio/wp-content/themes/portfolio_template/images/logo.png" alt="" class="header__logo__img")
-        p.header__logo__subtitle ビスコッティ専門店
-      nav.header__nav
-        ul.header__nav__ul
-          li.header__nav__li
-            a(href="#concept" title="コンセプト")
-              img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav1.png" class="header__nav__img")
-          li.header__nav__li
-            a(href="#secret" title="おいしさのひみつ")
-              img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav2.png" class="header__nav__img")
-          li.header__nav__li
-            a(href="#item-info" title="商品情報")
-              img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav3.png" class="header__nav__img")
-          li.header__nav__li
-            a(href="#shop-info" title="出店情報")
-              img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav4.png" class="header__nav__img")
-          li.header__nav__li
-            a(href="#online-shop" title="オンラインショップ")
-              img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav5.png" class="header__nav__img")
-      #nav-drawer
-        input#nav-input.nav-unshown(type="checkbox")
-        label#nav-open(for="nav-input")
-          img.hamburger_img(src="images/hamburger.png")
-        label#nav-close.nav-unshown(for="nav-input")
-          img.close_img(src="images/close.png")
-        #nav-content
-          ul.hamburger_nav_list
-            li
+    header
+      .header
+        .header__logo
+          a(href="")
+            img(src="/portfolio/wp-content/themes/portfolio_template/images/logo.png" alt="" class="header__logo__img")
+          p.header__logo__subtitle ビスコッティ専門店
+        nav.header__nav
+          ul.header__nav__ul
+            li.header__nav__li
               a(href="#concept" title="コンセプト")
-                img(src="images/biscottinav1.png")
-            li
+                img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav1.png" class="header__nav__img")
+            li.header__nav__li
               a(href="#secret" title="おいしさのひみつ")
-                img(src="images/biscottinav2.png")
-            li
+                img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav2.png" class="header__nav__img")
+            li.header__nav__li
               a(href="#item-info" title="商品情報")
-                img(src="images/biscottinav3.png")
-            li
+                img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav3.png" class="header__nav__img")
+            li.header__nav__li
               a(href="#shop-info" title="出店情報")
-                img(src="images/biscottinav4.png")
-            li
+                img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav4.png" class="header__nav__img")
+            li.header__nav__li
               a(href="#online-shop" title="オンラインショップ")
-                img(src="images/biscottinav5.png")
+                img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav5.png" class="header__nav__img")
+        #mobile-menu.mobile-menu
+            input(id="input" type="checkbox" class="mobile-menu__input")
+            label(for="input")
+              img(src="/portfolio/wp-content/themes/portfolio_template/images/hamburger.png", alt="" class="mobile-menu__btn")
+        .mobile-menu__content
+          nav.mobile-menu__nav
+            ul.mobile-menu__ul
+              li.mobile-menu__li
+                a(href="#concept" title="コンセプト")
+                  img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav1.png" class="mobile-menu__img")
+              li.mobile-menu__li
+                a(href="#secret" title="おいしさのひみつ")
+                  img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav2.png" class="mobile-menu__img")
+              li.mobile-menu__li
+                a(href="#item-info" title="商品情報")
+                  img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav3.png" class="mobile-menu__img")
+              li.mobile-menu__li
+                a(href="#shop-info" title="出店情報")
+                  img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav4.png" class="mobile-menu__img")
+              li.mobile-menu__li
+                a(href="#online-shop" title="オンラインショップ")
+                  img(src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav5.png" class="mobile-menu__img")
