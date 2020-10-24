@@ -24,19 +24,19 @@
           </ul>
         </nav>
         <div class="mobile-menu" id="mobile-menu">
-          <input class="mobile-menu__input" id="input" type="checkbox"/>
-          <label for="input"><img class="mobile-menu__btn" src="/portfolio/wp-content/themes/portfolio_template/images/hamburger.png" alt=""/></label>
-        </div>
-        <div class="mobile-menu__content">
-          <nav class="mobile-menu__nav">
-            <ul class="mobile-menu__ul">
-              <li class="mobile-menu__li"><a href="#concept" title="コンセプト"><img class="mobile-menu__img" src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav1.png"/></a></li>
-              <li class="mobile-menu__li"><a href="#secret" title="おいしさのひみつ"><img class="mobile-menu__img" src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav2.png"/></a></li>
-              <li class="mobile-menu__li"><a href="#item-info" title="商品情報"><img class="mobile-menu__img" src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav3.png"/></a></li>
-              <li class="mobile-menu__li"><a href="#shop-info" title="出店情報"><img class="mobile-menu__img" src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav4.png"/></a></li>
-              <li class="mobile-menu__li"><a href="#online-shop" title="オンラインショップ"><img class="mobile-menu__img" src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav5.png"/></a></li>
-            </ul>
-          </nav>
+          <input class="mobile-menu__input" id="nav-input" type="checkbox"/>
+          <label for="nav-input"><img class="mobile-menu__btn" src="/portfolio/wp-content/themes/portfolio_template/images/hamburger.png" alt=""/></label>
+          <div class="mobile-menu__content">
+            <nav class="mobile-menu__nav">
+              <ul class="mobile-menu__ul">
+                <li class="mobile-menu__li"><a href="#concept" title="コンセプト"><img class="mobile-menu__img" src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav1.png"/></a></li>
+                <li class="mobile-menu__li"><a href="#secret" title="おいしさのひみつ"><img class="mobile-menu__img" src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav2.png"/></a></li>
+                <li class="mobile-menu__li"><a href="#item-info" title="商品情報"><img class="mobile-menu__img" src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav3.png"/></a></li>
+                <li class="mobile-menu__li"><a href="#shop-info" title="出店情報"><img class="mobile-menu__img" src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav4.png"/></a></li>
+                <li class="mobile-menu__li"><a href="#online-shop" title="オンラインショップ"><img class="mobile-menu__img" src="/portfolio/wp-content/themes/portfolio_template/images/biscottinav5.png"/></a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
