@@ -84,6 +84,7 @@ header{
   background-color: gray
 }
 .header{
+  position relative
   @extend .content-width
   display: flex
   justify-content: space-between
@@ -123,10 +124,7 @@ header{
 モバイルメニュー
 
 ******************************************************************/
-.mobile-menu{
-   width: 50px
-   margin-top: 5px
-   margin-right: 10px
+.mobile-menu {
 
   input{
     position: absolute
@@ -134,11 +132,13 @@ header{
     top: -20px
   }
   label{
-    position relative//ポジションいる
+    position: absolute
+    right:5%
+    top: 5px
     z-index: 99
-    width: 100%
+    width: 50px
     cursor: pointer
-
+    transition: all 0.3s
     img{
       width: 100%
     }
@@ -147,15 +147,20 @@ header{
     z-index: 1
     position: fixed
     top: 0
-    left: 0
-    width: 100%
+    right: 0
+    width: 50%
     height: 100vh
     transform: translateX(100%)
     transition: transform 0.3s
     background-color: #333
   }
- #nav-input:checked ~ &__content{
-  transform: translateX(0px)
-
-}
+  &__img{
+    width: 100px
+  }
+  #nav-input:checked ~ &__content{
+    transform: translateX(0px)
+  }
+  #nav-input:checked ~ label{
+   left: 40%
+  }
 }

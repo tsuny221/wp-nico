@@ -73,6 +73,7 @@ header {
   background-color: #808080;
 }
 .header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,21 +111,20 @@ header {
 .main-visual {
   width: 100%;
 }
-.mobile-menu {
-  width: 50px;
-  margin-top: 5px;
-  margin-right: 10px;
-}
 .mobile-menu input {
   position: absolute;
   right: -20px;
   top: -20px;
 }
 .mobile-menu label {
-  position: relative;
+  position: absolute;
+  right: 5%;
+  top: 5px;
   z-index: 99;
-  width: 100%;
+  width: 50px;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .mobile-menu label img {
   width: 100%;
@@ -133,8 +133,8 @@ header {
   z-index: 1;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: 50%;
   height: 100vh;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
@@ -145,10 +145,16 @@ header {
   transition: transform 0.3s, -webkit-transform 0.3s;
   background-color: #333;
 }
+.mobile-menu__img {
+  width: 100px;
+}
 #nav-input:checked ~ .mobile-menu__content {
   -webkit-transform: translateX(0px);
   -ms-transform: translateX(0px);
   transform: translateX(0px);
+}
+.mobile-menu #nav-input:checked ~ label {
+  left: 40%;
 }
 @media (min-width: 600px) {
   .flex {
